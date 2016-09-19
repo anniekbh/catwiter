@@ -1,0 +1,21 @@
+body {
+	display: inline-block;
+	background-image: url("../323912.jpg");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.formulario {
+	background-color: rgba(42,42,42,0.85);
+	padding: 0%;
+	text-align: center;
+	color: white;
+}
+.placeText {
+	background-color: rgba(42,42,42,0.85);
+	padding: 0%;
+	text-align: center;
+	color: white;
+}
