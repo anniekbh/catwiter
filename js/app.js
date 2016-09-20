@@ -1,11 +1,12 @@
 window.addEventListener("load", function() {
 	var boton = document.getElementById("boton");
 	var crearMensaje = document.getElementById("mensaje");
-
+	
 	boton.addEventListener("click", function(e) {
 		e.preventDefault();
 		mostrarMensaje(crearMensaje.value);
 		crearMensaje.value = "";
+		contar.value ="";
 	});
 
 	function mostrarMensaje(crearMensaje){
@@ -21,15 +22,24 @@ window.addEventListener("load", function() {
 		var caracteresIngresados = this.value.length;
 		var contar = document.getElementById("contador");
 		contar.innerText = limiteMaximo - caracteresIngresados;
-		if (caracteresIngresados>=limiteMaximo){
+		if (caracteresIngresados >=130){
+			contar.classList.add("colorPurpura");
+		} else {
+			contar.classList.remove("colorPurpura");
+		};
+		if (caracteresIngresados>=120){
 			contar.classList.add("colorRed");
+		}else{
+			contar.classList.remove("colorRed");
+		};
+		if (caracteresIngresados>=limiteMaximo){
+			contar.classList.add("colorSol");
 			boton.disabled = true;
 		} else {
-			contar.classList.remove("colorRed");
+			contar.classList.remove("colorSol");
 			boton.disabled=false;
-		}
+		};
 	});
-	
 });
 
 

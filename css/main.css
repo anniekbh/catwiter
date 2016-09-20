@@ -1,23 +1,32 @@
 body {
-	display: inline-block;
 	background-image: url("../323912.jpg");
 	background-position: center;
-	background-size: cover;
+	background-repeat: no-repeat;
 	text-align: center;
-	justify-content: center;
-	align-items: center;
+	color: white;
+}
+#contenedor{
+	padding: 2% 40%;
 }
 .formulario {
-	background-color: rgba(42,42,42,0.85);
-	padding: 0%;
-	text-align: center;
-	color: white;
-}
-.placeText {
-	text-align: center;
-	color: white;
+	background-color: rgba(42,42,42,0.85)
 }
 #hola div{
 	background-color: rgba(42,42,42,0.85);
 	margin:4% 0 3%;
+}
+span #contador {
+	font-size: 20px;
+}
+.colorRed{
+	color: #CB2B33;
+}
+.colorPurpura {
+	color: #FE82A6;
+}
+.colorSol {
+	color: #FDC161;
+}
+#mensaje{
+	overflow: hidden;
 }
