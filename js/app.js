@@ -8,6 +8,7 @@ window.addEventListener("load", function() {
 		crearMensaje.value = "";
 		var contar = document.getElementById("contador").innerText="140";
 		boton.disabled = true; 
+		
 	});
 
 	function mostrarMensaje(crearMensaje){
@@ -15,8 +16,22 @@ window.addEventListener("load", function() {
 	    var mostrarMensaje = document.createTextNode(crearMensaje);
 	    newMensaje.appendChild(mostrarMensaje);
 	    var placeText = document.getElementById("hola");
+	    reloj(newMensaje);
 	    placeText.insertBefore(newMensaje, placeText.childNodes[0]);
 	    };
+
+	function reloj(re){
+		var momentoActual = new Date() ;
+	   	var hora = momentoActual.getHours() ;
+	   	var minuto = momentoActual.getMinutes() ;
+	   		if (minuto<10) {
+	   			minuto ="0" + minuto;
+	   		}
+	   	var horaImprimible = " " + hora + " : " + minuto;
+	   	var hora = document.createElement("span");
+	   	hora.innerText=horaImprimible ;
+		re.insertBefore(hora,re.childNodes[1]);
+	}
 
 	crearMensaje.addEventListener("keydown", function(){
 		var limiteMaximo = 140;
