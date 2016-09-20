@@ -6,7 +6,8 @@ window.addEventListener("load", function() {
 		e.preventDefault();
 		mostrarMensaje(crearMensaje.value);
 		crearMensaje.value = "";
-		contar.value ="";
+		var contar = document.getElementById("contador").innerText="140";
+		boton.disabled = true; 
 	});
 
 	function mostrarMensaje(crearMensaje){
@@ -17,7 +18,7 @@ window.addEventListener("load", function() {
 	    placeText.insertBefore(newMensaje, placeText.childNodes[0]);
 	    };
 
-	crearMensaje.addEventListener("keyup", function(){
+	crearMensaje.addEventListener("keydown", function(){
 		var limiteMaximo = 140;
 		var caracteresIngresados = this.value.length;
 		var contar = document.getElementById("contador");
@@ -37,26 +38,16 @@ window.addEventListener("load", function() {
 			boton.disabled = true;
 		} else {
 			contar.classList.remove("colorSol");
-			boton.disabled=false;
+			boton.disabled = false;
 		};
 	});
+	
+	crearMensaje.addEventListener('keydown', autosize);     
+		function autosize(){
+		  var el = this;
+		  setTimeout(function(){
+		    el.style.cssText = 'height:auto; padding:0';
+		    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+		  },0);
+		}
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

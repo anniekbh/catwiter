@@ -9,14 +9,28 @@ body {
 	padding: 2% 40%;
 }
 .formulario {
-	background-color: rgba(42,42,42,0.85)
+	background-color: rgba(141, 186, 199, 0.62);
+	word-wrap: break-word;
+	padding: 3% 2%;
+	margin: 0;
+	border-radius: 6px;
 }
 #hola div{
-	background-color: rgba(42,42,42,0.85);
+	background-color: rgba(42, 42, 42, 0.43);
 	margin:4% 0 3%;
+	padding: 1% 2%;	
+}
+#hola{
+	word-wrap: break-word;
 }
 span #contador {
 	font-size: 20px;
+}
+#mensaje{
+	overflow: hidden;
+	background-color: rgba(206, 72, 111, 0.71);
+	border-color: rgba(206, 72, 111, 0.91);
+	border-radius: 3px;
 }
 .colorRed{
 	color: #CB2B33;
@@ -26,7 +40,4 @@ span #contador {
 }
 .colorSol {
 	color: #FDC161;
-}
-#mensaje{
-	overflow: hidden;
 }
