@@ -14,8 +14,10 @@ body {
 	color: white;
 }
 .placeText {
-	background-color: rgba(42,42,42,0.85);
-	padding: 0%;
 	text-align: center;
 	color: white;
+}
+#hola div{
+	background-color: rgba(42,42,42,0.85);
+	margin:4% 0 3%;
 }
