@@ -4,6 +4,7 @@ body {
 	background-repeat: no-repeat;
 	text-align: center;
 	color: white;
+	font-family: 'Baloo Bhaina', cursive;
 }
 #contenedor{
 	padding: 2% 30%;
@@ -16,18 +17,26 @@ body {
 	border-radius: 6px;
 }
 img{
-	width: 10%;
+	width: 12%;
+}
+#boton{
+	background-color: #a91741;
+	color: white;
+	border-color: #a91741;
+	border-radius: 6%;
+	width: 28%;
+	padding: 2%;
+	font-family: 'Baloo Bhaina', cursive;
 }
 #hola div{
-	background-color: rgba(42, 42, 42, 0.43);
+	background-color: rgba(249, 217, 239, 0.61);
 	margin:4% 0 3%;
-	padding: 1% 2%;	
+	padding: 1% 2%;
+	border-radius: 4%;
+
 }
 #hola{
 	word-wrap: break-word;
-}
-span #contador {
-	font-size: 20px;
 }
 #mensaje{
 	overflow: hidden;
@@ -35,6 +44,8 @@ span #contador {
 	border-color: rgba(206, 72, 111, 0.91);
 	border-radius: 3px;
 	width: 75%;
+	color: white;
+	font-family: 'Baloo Bhaina', cursive;
 }
 .colorRed{
 	color: #CB2B33;
@@ -44,4 +55,7 @@ span #contador {
 }
 .colorSol {
 	color: #FDC161;
+}
+.imageWow{
+	width: 5%;
 }

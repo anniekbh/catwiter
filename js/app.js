@@ -18,7 +18,12 @@ window.addEventListener("load", function() {
 	    var placeText = document.getElementById("hola");
 	    reloj(newMensaje);
 	    placeText.insertBefore(newMensaje, placeText.childNodes[0]);
-	    };
+
+	    var imageCat= document.createElement("img");
+        imageCat.classList.add("imageWow")
+        imageCat.setAttribute("src", "cat-512.png")
+        newMensaje.insertBefore(imageCat, newMensaje.childNodes[0]);
+	};
 
 	function reloj(re){
 		var momentoActual = new Date() ;
@@ -31,7 +36,7 @@ window.addEventListener("load", function() {
 	   	var hora = document.createElement("span");
 	   	hora.innerText=horaImprimible ;
 		re.insertBefore(hora,re.childNodes[1]);
-	}
+	};
 
 	crearMensaje.addEventListener("keydown", function(){
 		var limiteMaximo = 140;
